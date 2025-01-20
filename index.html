@@ -1,12 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site de Ferramentas Eletrônicas</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ferramentas para Eletrônica</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      background: url('https://via.placeholder.com/1500x150') no-repeat center center;
+      background-size: cover;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 10;
+    }
+    .content {
+      padding-top: 160px;
+    }
+    .buttons {
+      margin-top: 20px;
+    }
+    .button {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 30px;
+      font-size: 18px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-    <h1>Bem-vindo ao meu site de ferramentas para eletrônica!</h1>
-    <p>Encontre as melhores ferramentas para sua oficina de eletrônica.</p>
+  <header></header>
+  <div class="content">
+    <h1>Bem-vindo ao Ferramentas para Eletrônica</h1>
+    <p>Explore os melhores produtos para sua oficina!</p>
+    <div class="buttons">
+      <a href="pagina1.html" class="button">Página 1</a>
+      <a href="pagina2.html" class="button">Página 2</a>
+      <a href="pagina3.html" class="button">Página 3</a>
+    </div>
+  </div>
 </body>
 </html>
