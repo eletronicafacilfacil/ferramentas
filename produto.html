@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja - Produto</title>
+    <style>
+        /* Estilo para o cabeçalho */
+        header {
+            position: relative;
+            width: 100%;
+            height: 250px;
+            background-image: url('cabeçalho.jpeg'); /* Substitua com o nome da sua imagem */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Estilo para o container do produto */
+        .produto-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo para a imagem do produto */
+        .produto-imagem {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Estilo para a descrição do produto */
+        .descricao {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Estilo para o botão de voltar */
+        .voltar {
+            display: block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            width: 200px;
+            margin: 0 auto;
+        }
+
+        .voltar:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho com a imagem -->
+    <header></header>
+
+    <!-- Container do Produto -->
+    <div class="produto-container">
+        <!-- Imagem do Produto com Link para Shopee -->
+        <a href="https://shopee.com.br/SEU_LINK_PERSONALIZADO" target="_blank">
+            <img src="produto.jpg" alt="Produto" class="produto-imagem"> <!-- Substitua com a imagem do seu produto -->
+        </a>
+
+        <!-- Descrição do Produto -->
+        <div class="descricao">
+            <p>Este é o incrível produto que você estava procurando! Clique na imagem acima para ser direcionado para a nossa loja Shopee e realizar a compra de forma fácil e segura.</p>
+        </div>
+
+        <!-- Botão para Voltar à Página Inicial -->
+        <a href="index.html" class="voltar">Voltar à Página Inicial</a>
+    </div>
+</body>
+</html>
