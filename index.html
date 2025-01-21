@@ -7,7 +7,6 @@
     <style>
         /* Estilo para o cabeçalho */
         header {
-            position: relative;
             width: 100%;
             height: 250px; /* Altura do cabeçalho */
             background-image: url('cabeçalho.jpeg'); /* Substitua com o nome da sua imagem */
@@ -15,22 +14,50 @@
             background-position: center; /* Centraliza a imagem */
         }
 
-        /* Adiciona texto centralizado no cabeçalho */
-        header h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white; /* Cor do texto */
-            font-size: 36px;
+        /* Estilo para a frase abaixo do cabeçalho */
+        .frase {
+            text-align: center;
+            font-size: 24px;
+            margin: 20px 0;
+            color: #333;
+        }
+
+        /* Estilo para os botões */
+        .botoes {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .botoes a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .botoes a:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <!-- Cabeçalho com a imagem -->
-    <header>
-        <h1>Bem-vindo à Eletrônica Fácil Fácil</h1>
-    </header>
+    <header></header>
+
+    <!-- Frase de boas-vindas -->
+    <div class="frase">Bem-vindo à Eletrônica Fácil Fácil</div>
+
+    <!-- Botões -->
+    <div class="botoes">
+        <a href="#pagina1">Página 1</a>
+        <a href="#pagina2">Página 2</a>
+        <a href="#pagina3">Página 3</a>
+    </div>
 
     <!-- Conteúdo da página -->
     <div>
