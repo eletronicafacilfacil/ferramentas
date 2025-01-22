@@ -24,18 +24,20 @@
             color: #333;
         }
         .produtos {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
             gap: 20px;
-            justify-items: center;
             margin: 20px 0;
         }
         .produto {
             text-align: center;
+            width: 30%; /* Ajusta a largura para 3 produtos por linha */
         }
         .produto img {
             width: 100%;
             max-width: 200px;
+            height: auto;
             border-radius: 8px;
             transition: transform 0.3s;
         }
