@@ -23,6 +23,25 @@
             margin: 20px 0;
             color: #333;
         }
+        .produtos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+            gap: 20px;
+            justify-items: center;
+            margin: 20px 0;
+        }
+        .produto {
+            text-align: center;
+        }
+        .produto img {
+            width: 100%;
+            max-width: 200px;
+            border-radius: 8px;
+            transition: transform 0.3s;
+        }
+        .produto img:hover {
+            transform: scale(1.05);
+        }
         .botoes {
             display: flex;
             justify-content: center;
@@ -59,11 +78,53 @@
     <!-- Frase abaixo do cabeçalho -->
     <div class="frase">Bem-vindo à Eletrônica Fácil Fácil</div>
 
-    <!-- Botões -->
-    <div class="botoes">
-        <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Produto 1</a>
-        <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 2</a>
-        <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Produto 3</a>
+    <!-- Exibição dos produtos -->
+    <div class="produtos">
+        <!-- Produto 1 -->
+        <div class="produto">
+            <img src="produto_01.jpg" alt="Produto 1">
+            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Produto 1</a>
+        </div>
+        <!-- Produto 2 -->
+        <div class="produto">
+            <img src="produto_02.jpg" alt="Produto 2">
+            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 2</a>
+        </div>
+        <!-- Produto 3 -->
+        <div class="produto">
+            <img src="produto_03.jpg" alt="Produto 3">
+            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Produto 3</a>
+        </div>
+        <!-- Produto 4 -->
+        <div class="produto">
+            <img src="produto_04.jpg" alt="Produto 4">
+            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 4</a>
+        </div>
+        <!-- Produto 5 -->
+        <div class="produto">
+            <img src="produto_05.jpg" alt="Produto 5">
+            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Produto 5</a>
+        </div>
+        <!-- Produto 6 -->
+        <div class="produto">
+            <img src="produto_06.jpg" alt="Produto 6">
+            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 6</a>
+        </div>
+        <!-- Produto 7 -->
+        <div class="produto">
+            <img src="produto_07.jpg" alt="Produto 7">
+            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Produto 7</a>
+        </div>
+        <!-- Produto 8 -->
+        <div class="produto">
+            <img src="produto_08.jpg" alt="Produto 8">
+            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Produto 8</a>
+        </div>
+        <!-- Produto 9 -->
+        <div class="produto">
+            <img src="produto_09.jpg" alt="Produto 9">
+            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 9</a>
+        </div>
     </div>
 
     <!-- Rodapé -->
