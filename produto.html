@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eletrônica Fácil Fácil</title>
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389728689402083" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
         }
         header {
             position: relative;
@@ -18,54 +18,46 @@
             background-position: center;
         }
         .frase {
-            text-align: center;
-            font-size: 24px;
+            font-size: 20px;
             margin: 20px 0;
             color: #333;
-        }
-        .botao-retorno {
-            display: block;
-            width: 200px;
-            margin: 10px auto;
-            padding: 10px;
-            font-size: 16px;
-            text-align: center;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s;
-        }
-        .botao-retorno:hover {
-            background-color: #0056b3;
         }
         .produtos {
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             gap: 20px;
             margin: 20px 0;
         }
         .produto {
-            width: 30%; /* Ajusta a largura para 3 produtos por linha */
-            text-align: center;
-        }
-        .produto a {
-            display: block;
-            width: 100%;
-            max-width: 200px;
-            margin: 0 auto;
+            flex: 0 1 calc(33.333% - 20px);
+            box-sizing: border-box;
         }
         .produto img {
             width: 100%;
             height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
         .produto img:hover {
             transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .retornar {
+            margin: 20px 0;
+        }
+        .retornar a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .retornar a:hover {
+            background-color: #0056b3;
         }
         footer {
             margin-top: 50px;
@@ -84,10 +76,7 @@
     <!-- Frase abaixo do cabeçalho -->
     <div class="frase">Clique no produto para ver o preço e condições</div>
 
-    <!-- Botão de retorno -->
-    <a href="index.html" class="botao-retorno">Voltar à Página Principal</a>
-
-    <!-- Exibição dos produtos -->
+    <!-- Produtos -->
     <div class="produtos">
         <!-- Produto 1 -->
         <div class="produto">
@@ -109,55 +98,50 @@
         </div>
         <!-- Produto 4 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">
+            <a href="https://s.shopee.com.br/6V8P4B4A2E" target="_blank">
                 <img src="produto_04.jpg" alt="Produto 4">
             </a>
         </div>
         <!-- Produto 5 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">
+            <a href="https://s.shopee.com.br/6Koys4UkJc" target="_blank">
                 <img src="produto_05.jpg" alt="Produto 5">
             </a>
         </div>
         <!-- Produto 6 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">
+            <a href="https://s.shopee.com.br/6KoysE0JAm" target="_blank">
                 <img src="produto_06.jpg" alt="Produto 6">
             </a>
         </div>
         <!-- Produto 7 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">
+            <a href="https://s.shopee.com.br/9Um0eAXp2g" target="_blank">
                 <img src="produto_07.jpg" alt="Produto 7">
             </a>
         </div>
         <!-- Produto 8 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">
+            <a href="https://s.shopee.com.br/AKL7drDPYW" target="_blank">
                 <img src="produto_08.jpg" alt="Produto 8">
             </a>
         </div>
         <!-- Produto 9 -->
         <div class="produto">
-            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">
+            <a href="https://s.shopee.com.br/LXljeQHA2" target="_blank">
                 <img src="produto_09.jpg" alt="Produto 9">
             </a>
         </div>
     </div>
 
+    <!-- Botão para retornar à página principal -->
+    <div class="retornar">
+        <a href="index.html">Retornar à Página Principal</a>
+    </div>
+
     <!-- Rodapé -->
     <footer>
         <p>Eletrônica Fácil Fácil - Todos os direitos reservados</p>
-        <ins class="adsbygoogle"
-             style="display:block"
-             data-ad-client="ca-pub-6389728689402083"
-             data-ad-slot="1112131415"
-             data-ad-format="auto"
-             data-full-width-responsive="true"></ins>
-        <script>
-            (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
     </footer>
-
 </body>
 </html>
