@@ -7,7 +7,10 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
         }
+
         header {
             position: relative;
             width: 100%;
@@ -16,119 +19,137 @@
             background-size: cover;
             background-position: center;
         }
-        .frase {
-            text-align: center;
-            font-size: 24px;
-            margin: 20px 0;
-            color: #333;
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 10px;
         }
-        .produtos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            padding: 20px;
-        }
-        .produto {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .produto:hover {
-            transform: translateY(-5px);
-        }
-        .produto img {
-            max-width: 100%;
-            height: auto;
-        }
-        .produto h3 {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #007BFF;
-        }
-        .produto a {
-            text-decoration: none;
-            color: white;
-            background-color: #007BFF;
-            padding: 10px 15px;
-            border-radius: 5px;
+
+        .back-button {
             display: inline-block;
-            margin-bottom: 10px;
+            margin: 10px 0;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
             transition: background-color 0.3s;
         }
-        .produto a:hover {
+
+        .back-button:hover {
             background-color: #0056b3;
         }
+
+        .products {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            text-align: center;
+        }
+
+        .product {
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .product a:hover {
+            color: #0056b3;
+        }
+
         footer {
             text-align: center;
             margin-top: 20px;
-            padding: 20px;
-            background-color: #f8f9fa;
-            color: #555;
+            padding: 10px;
+            background-color: #f1f1f1;
         }
     </style>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header></header>
 
-    <!-- Frase abaixo do cabeçalho -->
-    <div class="frase">Confira nossos produtos disponíveis</div>
+    <div class="container">
+        <!-- Botão de voltar -->
+        <a href="index.html" class="back-button">Voltar para a Página Inicial</a>
 
-    <!-- Lista de produtos -->
-    <div class="produtos">
-        <div class="produto">
-            <img src="produto_01.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_02.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_03.jpg" alt="Produto 3">
-            <h3>Produto 3</h3>
-            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_04.jpg" alt="Produto 4">
-            <h3>Produto 4</h3>
-            <a href="https://s.shopee.com.br/6V8P4B4A2E" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_05.jpg" alt="Produto 5">
-            <h3>Produto 5</h3>
-            <a href="https://s.shopee.com.br/6Koys4UkJc" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_06.jpg" alt="Produto 6">
-            <h3>Produto 6</h3>
-            <a href="https://s.shopee.com.br/6KoysE0JAm" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_07.jpg" alt="Produto 7">
-            <h3>Produto 7</h3>
-            <a href="https://s.shopee.com.br/9Um0eAXp2g" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_08.jpg" alt="Produto 8">
-            <h3>Produto 8</h3>
-            <a href="https://s.shopee.com.br/AKL7drDPYW" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_09.jpg" alt="Produto 9">
-            <h3>Produto 9</h3>
-            <a href="https://s.shopee.com.br/LXljeQHA2" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
+        <h1>Produtos Disponíveis</h1>
+        <div class="products">
+            <div class="product">
+                <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">
+                    <img src="produto_01.jpg" alt="Produto 01">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">
+                    <img src="produto_02.jpg" alt="Produto 02">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">
+                    <img src="produto_03.jpg" alt="Produto 03">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/6V8P4B4A2E" target="_blank">
+                    <img src="produto_04.jpg" alt="Produto 04">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/6Koys4UkJc" target="_blank">
+                    <img src="produto_05.jpg" alt="Produto 05">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/6KoysE0JAm" target="_blank">
+                    <img src="produto_06.jpg" alt="Produto 06">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/9Um0eAXp2g" target="_blank">
+                    <img src="produto_07.jpg" alt="Produto 07">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/AKL7drDPYW" target="_blank">
+                    <img src="produto_08.jpg" alt="Produto 08">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
+            <div class="product">
+                <a href="https://s.shopee.com.br/LXljeQHA2" target="_blank">
+                    <img src="produto_09.jpg" alt="Produto 09">
+                    <p>Clique no produto e vá para Shopee ver o produto</p>
+                </a>
+            </div>
         </div>
     </div>
 
-    <!-- Rodapé -->
     <footer>
-        <p>Eletrônica Fácil Fácil - Todos os direitos reservados</p>
+        &copy; 2025 Eletrônica Fácil Fácil
     </footer>
 </body>
 </html>
