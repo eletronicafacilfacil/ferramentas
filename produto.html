@@ -23,6 +23,24 @@
             margin: 20px 0;
             color: #333;
         }
+        .botao-retorno {
+            display: block;
+            width: 200px;
+            margin: 10px auto;
+            padding: 10px;
+            font-size: 16px;
+            text-align: center;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .botao-retorno:hover {
+            background-color: #0056b3;
+        }
         .produtos {
             display: flex;
             flex-wrap: wrap;
@@ -64,7 +82,10 @@
     <header></header>
 
     <!-- Frase abaixo do cabeçalho -->
-    <div class="frase">Bem-vindo à Eletrônica Fácil Fácil</div>
+    <div class="frase">Clique no produto para ver o preço e condições</div>
+
+    <!-- Botão de retorno -->
+    <a href="index.html" class="botao-retorno">Voltar à Página Principal</a>
 
     <!-- Exibição dos produtos -->
     <div class="produtos">
