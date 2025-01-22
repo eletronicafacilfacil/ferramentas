@@ -50,34 +50,6 @@
             padding: 20px 0;
             background-color: #f8f9fa;
         }
-        #adModal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            justify-content: center;
-            align-items: center;
-        }
-        #adModal .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            text-align: center;
-            max-width: 600px;
-            width: 90%;
-        }
-        #adModal .close {
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -89,26 +61,9 @@
 
     <!-- Botões -->
     <div class="botoes">
-        <a href="#" onclick="showAd('https://s.shopee.com.br/Vr44FQaYK')">Produto 1</a>
-        <a href="#" onclick="showAd('https://s.shopee.com.br/4AkSRLM3ub')">Produto 2</a>
-        <a href="#" onclick="showAd('https://s.shopee.com.br/60C6aUZd6p')">Produto 3</a>
-    </div>
-
-    <!-- Modal para exibir o anúncio -->
-    <div id="adModal">
-        <div class="modal-content">
-            <p>Aguarde enquanto carregamos o anúncio...</p>
-            <ins class="adsbygoogle"
-                 style="display:block"
-                 data-ad-client="ca-pub-6389728689402083"
-                 data-ad-slot="1234567890"
-                 data-ad-format="auto"
-                 data-full-width-responsive="true"></ins>
-            <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-            </script>
-            <button class="close" onclick="closeAd()">Fechar</button>
-        </div>
+        <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Produto 1</a>
+        <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Produto 2</a>
+        <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Produto 3</a>
     </div>
 
     <!-- Rodapé -->
@@ -125,20 +80,5 @@
         </script>
     </footer>
 
-    <script>
-        function showAd(destinationUrl) {
-            const modal = document.getElementById('adModal');
-            modal.style.display = 'flex';
-            setTimeout(() => {
-                modal.style.display = 'none';
-                window.location.href = destinationUrl;
-            }, 5000); // 5 segundos para redirecionar
-        }
-
-        function closeAd() {
-            const modal = document.getElementById('adModal');
-            modal.style.display = 'none';
-        }
-    </script>
 </body>
-</html> 
+</html>
