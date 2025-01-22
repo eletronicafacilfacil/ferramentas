@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produtos - Eletrônica Fácil Fácil</title>
+    <title>Eletrônica Fácil Fácil</title>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6389728689402083" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -22,51 +23,60 @@
             margin: 20px 0;
             color: #333;
         }
-        .produtos {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        .botoes {
+            display: flex;
+            justify-content: center;
             gap: 20px;
-            padding: 20px;
+            margin: 20px 0;
         }
-        .produto {
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            overflow: hidden;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s;
-        }
-        .produto:hover {
-            transform: translateY(-5px);
-        }
-        .produto img {
-            max-width: 100%;
-            height: auto;
-        }
-        .produto h3 {
-            margin: 10px 0;
-            font-size: 18px;
-            color: #007BFF;
-        }
-        .produto a {
+        .botoes a {
             text-decoration: none;
-            color: white;
             background-color: #007BFF;
-            padding: 10px 15px;
+            color: white;
+            padding: 10px 20px;
             border-radius: 5px;
-            display: inline-block;
-            margin-bottom: 10px;
+            font-size: 16px;
+            text-align: center;
             transition: background-color 0.3s;
         }
-        .produto a:hover {
+        .botoes a:hover {
             background-color: #0056b3;
         }
         footer {
+            margin-top: 50px;
             text-align: center;
-            margin-top: 20px;
-            padding: 20px;
-            background-color: #f8f9fa;
+            font-size: 14px;
             color: #555;
+            padding: 20px 0;
+            background-color: #f8f9fa;
+        }
+        #adModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+        #adModal .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        #adModal .close {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -75,60 +85,60 @@
     <header></header>
 
     <!-- Frase abaixo do cabeçalho -->
-    <div class="frase">Confira nossos produtos disponíveis</div>
+    <div class="frase">Bem-vindo à Eletrônica Fácil Fácil</div>
 
-    <!-- Lista de produtos -->
-    <div class="produtos">
-        <div class="produto">
-            <img src="produto_01.jpg" alt="Produto 1">
-            <h3>Produto 1</h3>
-            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_02.jpg" alt="Produto 2">
-            <h3>Produto 2</h3>
-            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_03.jpg" alt="Produto 3">
-            <h3>Produto 3</h3>
-            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_04.jpg" alt="Produto 4">
-            <h3>Produto 4</h3>
-            <a href="https://s.shopee.com.br/6V8P4B4A2E" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_05.jpg" alt="Produto 5">
-            <h3>Produto 5</h3>
-            <a href="https://s.shopee.com.br/6Koys4UkJc" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_06.jpg" alt="Produto 6">
-            <h3>Produto 6</h3>
-            <a href="https://s.shopee.com.br/6KoysE0JAm" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_07.jpg" alt="Produto 7">
-            <h3>Produto 7</h3>
-            <a href="https://s.shopee.com.br/9Um0eAXp2g" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_08.jpg" alt="Produto 8">
-            <h3>Produto 8</h3>
-            <a href="https://s.shopee.com.br/AKL7drDPYW" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
-        </div>
-        <div class="produto">
-            <img src="produto_09.jpg" alt="Produto 9">
-            <h3>Produto 9</h3>
-            <a href="https://s.shopee.com.br/LXljeQHA2" target="_blank">Clique no produto e vá para Shopee ver o produto</a>
+    <!-- Botões -->
+    <div class="botoes">
+        <a href="#" onclick="showAd('https://s.shopee.com.br/Vr44FQaYK')">Produto 1</a>
+        <a href="#" onclick="showAd('https://s.shopee.com.br/4AkSRLM3ub')">Produto 2</a>
+        <a href="#" onclick="showAd('https://s.shopee.com.br/60C6aUZd6p')">Produto 3</a>
+    </div>
+
+    <!-- Modal para exibir o anúncio -->
+    <div id="adModal">
+        <div class="modal-content">
+            <p>Aguarde enquanto carregamos o anúncio...</p>
+            <ins class="adsbygoogle"
+                 style="display:block"
+                 data-ad-client="ca-pub-6389728689402083"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+            <button class="close" onclick="closeAd()">Fechar</button>
         </div>
     </div>
 
     <!-- Rodapé -->
     <footer>
         <p>Eletrônica Fácil Fácil - Todos os direitos reservados</p>
+        <ins class="adsbygoogle"
+             style="display:block"
+             data-ad-client="ca-pub-6389728689402083"
+             data-ad-slot="1112131415"
+             data-ad-format="auto"
+             data-full-width-responsive="true"></ins>
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
     </footer>
+
+    <script>
+        function showAd(destinationUrl) {
+            const modal = document.getElementById('adModal');
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.style.display = 'none';
+                window.location.href = destinationUrl;
+            }, 5000); // 5 segundos para redirecionar
+        }
+
+        function closeAd() {
+            const modal = document.getElementById('adModal');
+            modal.style.display = 'none';
+        }
+    </script>
 </body>
 </html>
