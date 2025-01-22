@@ -42,6 +42,38 @@
         .botoes a:hover {
             background-color: #0056b3;
         }
+        /* Novo botão para voltar à página inicial */
+        .retornar-btn {
+            text-decoration: none;
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-align: center;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .retornar-btn:hover {
+            background-color: #218838;
+        }
+        /* Estilos para os produtos */
+        .produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin: 20px;
+        }
+        .produto {
+            width: calc(33.33% - 20px);
+            text-align: center;
+        }
+        .produto img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
         footer {
             margin-top: 50px;
             text-align: center;
@@ -87,11 +119,26 @@
     <!-- Frase abaixo do cabeçalho -->
     <div class="frase">Bem-vindo à Eletrônica Fácil Fácil</div>
 
-    <!-- Botões -->
-    <div class="botoes">
-        <a href="#" onclick="showAd('https://s.shopee.com.br/Vr44FQaYK')">Produto 1</a>
-        <a href="#" onclick="showAd('https://s.shopee.com.br/4AkSRLM3ub')">Produto 2</a>
-        <a href="#" onclick="showAd('https://s.shopee.com.br/60C6aUZd6p')">Produto 3</a>
+    <!-- Botão para voltar à página inicial -->
+    <a href="index.html" class="retornar-btn">Retorne à página inicial</a>
+
+    <!-- Produtos -->
+    <div class="produtos">
+        <div class="produto">
+            <a href="https://s.shopee.com.br/Vr44FQaYK" target="_blank">
+                <img src="produto1.jpg" alt="Produto 1">
+            </a>
+        </div>
+        <div class="produto">
+            <a href="https://s.shopee.com.br/4AkSRLM3ub" target="_blank">
+                <img src="produto2.jpg" alt="Produto 2">
+            </a>
+        </div>
+        <div class="produto">
+            <a href="https://s.shopee.com.br/60C6aUZd6p" target="_blank">
+                <img src="produto3.jpg" alt="Produto 3">
+            </a>
+        </div>
     </div>
 
     <!-- Modal para exibir o anúncio -->
